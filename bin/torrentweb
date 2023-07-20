@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+// This shebang line above ensures the file is executed with Node.js
+
+// Require the main index.js file
+const index = require('../index');
+
+// Call any necessary functions from index.js
+index.start();
