@@ -2,8 +2,20 @@
 
 // This shebang line above ensures the file is executed with Node.js
 
-// Require the main index.js file
-const index = require('../index');
+// Call the index.js file using the node command
+const { spawn } = require('child_process');
+const path = require('path');
 
-// Call any necessary functions from index.js
-index.start();
+const child = spawn('node', [path.join(__dirname, '../index.js')]);
+
+child.stdout.on('data', (data) => {
+  console.log(data.toString());
+});
+
+child.stderr.on('data', (data) => {
+  console.error(data.toString());
+});
+
+child.on('exit', (code) => {
+  console.log(`Child process exited with code ${code}`);
+});
