@@ -5,7 +5,7 @@ you to stream torrent content directly to your
 browser.
 ## Installation
 To install Torrent-Web, you can use npm by 
-running the following command: ```npm install -g torrentweb ```
+running the following command: ```npm install -g npm-torrent-web ```
 ## Usage
 1. After installation, simply run the following 
 command in your terminal: ```torrentweb ``` 

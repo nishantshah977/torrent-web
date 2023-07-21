@@ -1,18 +1,25 @@
 {
-  "name": "torrent-web",
-  "version": "1.0",
+  "name": "npm-torrent-web",
+  "version": "1.0.2",
   "description": "Stream Torrent online without installing torrent client on your device.",
   "main": "index.js",
   "bin": {
-    "torrentweb": "./bin/torrentweb"
+    "torrentweb": "bin/torrentweb"
   },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["torrent", "webtorrent", "torrent streamer", "torrent downloader", "node torrent", "cli"],
+  "keywords": [
+    "torrent",
+    "webtorrent",
+    "torrent streamer",
+    "torrent downloader",
+    "node torrent",
+    "cli"
+  ],
   "author": "Nishant Shah",
-  "license": "GNU",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@types/node": "^18.0.6",
     "express": "^4.18.2",
@@ -20,5 +27,13 @@
     "node-fetch": "^3.2.6",
     "torrent-stream": "^1.2.1",
     "archiver": "^5.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishantshah977/torrent-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nishantshah977/torrent-web/issues"
+  },
+  "homepage": "https://github.com/nishantshah977/torrent-web#readme"
 }
